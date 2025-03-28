@@ -1,0 +1,58 @@
+name: 📄 Documentación de Funcionalidad
+description: Plantilla básica para describir en lenguaje natural cada funcionalidad identificada.
+title: "Funcionalidad: [Nombre breve]"
+labels: ["documentacion"]
+
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: 🔎 Informacion General
+      description: Proporciona una descripción o sinopsis de la funcionalidad. ¿Para qué sirve y quién la utiliza?
+      value: "Ejemplo: Esta funcionalidad permite a los usuarios crear y gestionar publicaciones en el sistema."
+    validations:
+      required: true
+
+ - type: textarea
+    id: requisitos
+    attributes:
+      label: ✅ Requisitos / Criterios de Aceptación
+      description: Lista las condiciones, requisitos o criterios de aceptación que debe cumplir la funcionalidad.
+      value: |
+        1. <!-- Detalla aquí los requisitos funcionales y no funcionales -->
+        2. <!-- Ej.: La funcionalidad debe permitir subir imágenes de hasta 2MB -->
+        3. <!-- Ej.: Debe funcionar correctamente en navegadores Chrome, Firefox, Edge -->
+    validations:
+      required: true
+
+ - type: textarea
+    id: workflow
+    attributes:
+      label: 🔁 Instrucciones
+      description: Explica de forma clara y paso a paso cómo se utiliza esta funcionalidad en la aplicación.
+      value: |
+        1. <!-- Paso 1 -->
+        2. <!-- Paso 2 -->
+        3. <!-- Paso 3 -->
+    validations:
+      required: true
+
+  - type: textarea
+    id: gui_description
+    attributes:
+      label: 🖥️ Interfaz de Usuario
+      description: Describe o adjunta referencias al diseño/UI (pantallas, menús, botones) relacionados con la funcionalidad.
+      value: |
+        - **Pantallas**:
+        - **Elementos**: 
+    validations:
+      required: false
+      
+  - type: textarea
+    id: video_evidence
+    attributes:
+      label: 🎥 Evidencia en Video
+      description: Pega un enlace a un video corto que muestre esta funcionalidad en acción.
+      value: "Ejemplo: https://drive.google.com/..."
+    validations:
+      required: true
