@@ -1,0 +1,69 @@
+name: 🐛 Reporte de Bug
+description: Reporta un comportamiento inesperado o error en la aplicación.
+title: "Bug: [título breve del problema]"
+labels: ["bug"]
+
+body:
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 🧾 Comportamiento Esperado
+      description: Describe qué se espera que suceda en condiciones normales.
+      placeholder: "Ejemplo: Al realizar cierta acción, debería mostrarse un mensaje de confirmación."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: 🐞 Comportamiento Actual
+      description: Explica qué sucede realmente y en qué difiere de lo esperado.
+      placeholder: "Ejemplo: La aplicación no muestra ningún mensaje o muestra un error inesperado."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: 🔁 Pasos para Reproducir
+      description: Proporciona una lista paso a paso de cómo reproducir el error.
+      placeholder: |
+        1. <!-- Paso 1 -->
+        2. <!-- Paso 2 -->
+        3. <!-- Paso 3 -->
+        .. <!-- ... -->
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidences
+    attributes:
+      label: 📷 Evidencias
+      description: Adjunta capturas de pantalla, grabaciones o enlaces relevantes.
+      placeholder: Puedes subir imágenes arrastrándolas aquí o pegar URLs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 🖥️ Contexto
+      description: Cualquier detalle extra que pueda ser de utilidad.
+      placeholder: |
+        - **Versión de la aplicación**: <!-- p.ej. 4.13.1 -->
+        - **Sistema Operativo**: <!-- p.ej. Ubuntu 18.04, Windows 10, macOS 12 -->
+        - **Navegador**: <!-- p.ej. Firefox 92.8, Chrome 99 -->
+        - configuración regional, tipo de cuenta, librerías relacionadas
+        - Cómo se ha reproducido el problema en diferentes entornos
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra_info
+    attributes:
+      label: ℹ️ Información Adicional
+      description: Proporciona cualquier otro detalle relevante como mensajes de error, logs o comportamiento extraño.
+      placeholder: "Ejemplo: Error visible en la consola del navegador o mensaje de excepción."
+    validations:
+      required: true
