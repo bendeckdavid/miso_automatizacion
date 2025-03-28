@@ -10,7 +10,7 @@ body:
     attributes:
       label: 🧾 Comportamiento Esperado
       description: Describe qué se espera que suceda en condiciones normales.
-      placeholder: "Ejemplo: Al realizar cierta acción, debería mostrarse un mensaje de confirmación."
+      value: "Ejemplo: Al realizar cierta acción, debería mostrarse un mensaje de confirmación."
     validations:
       required: true
 
@@ -19,7 +19,7 @@ body:
     attributes:
       label: 🐞 Comportamiento Actual
       description: Explica qué sucede realmente y en qué difiere de lo esperado.
-      placeholder: "Ejemplo: La aplicación no muestra ningún mensaje o muestra un error inesperado."
+      value: "Ejemplo: La aplicación no muestra ningún mensaje o muestra un error inesperado."
     validations:
       required: true
 
@@ -28,7 +28,7 @@ body:
     attributes:
       label: 🔁 Pasos para Reproducir
       description: Proporciona una lista paso a paso de cómo reproducir el error.
-      placeholder: |
+      value: |
         1. <!-- Paso 1 -->
         2. <!-- Paso 2 -->
         3. <!-- Paso 3 -->
@@ -41,7 +41,7 @@ body:
     attributes:
       label: 📷 Evidencias
       description: Adjunta capturas de pantalla, grabaciones o enlaces relevantes.
-      placeholder: Puedes subir imágenes arrastrándolas aquí o pegar URLs.
+      value: Puedes subir imágenes arrastrándolas aquí o pegar URLs.
     validations:
       required: true
 
@@ -50,7 +50,7 @@ body:
     attributes:
       label: 🖥️ Contexto
       description: Cualquier detalle extra que pueda ser de utilidad.
-      placeholder: |
+      value: |
         - **Versión de la aplicación**: <!-- p.ej. 4.13.1 -->
         - **Sistema Operativo**: <!-- p.ej. Ubuntu 18.04, Windows 10, macOS 12 -->
         - **Navegador**: <!-- p.ej. Firefox 92.8, Chrome 99 -->
@@ -64,6 +64,6 @@ body:
     attributes:
       label: ℹ️ Información Adicional
       description: Proporciona cualquier otro detalle relevante como mensajes de error, logs o comportamiento extraño.
-      placeholder: "Ejemplo: Error visible en la consola del navegador o mensaje de excepción."
+      value: "Ejemplo: Error visible en la consola del navegador o mensaje de excepción."
     validations:
       required: true
