@@ -7,13 +7,13 @@ body:
   - type: textarea
     id: overview
     attributes:
-      label: 🔎 Informacion General
+      label: 🔎 Información General
       description: Proporciona una descripción o sinopsis de la funcionalidad. ¿Para qué sirve y quién la utiliza?
       value: "Ejemplo: Esta funcionalidad permite a los usuarios crear y gestionar publicaciones en el sistema."
     validations:
       required: true
 
- - type: textarea
+  - type: textarea
     id: requisitos
     attributes:
       label: ✅ Requisitos / Criterios de Aceptación
@@ -25,7 +25,7 @@ body:
     validations:
       required: true
 
- - type: textarea
+  - type: textarea
     id: workflow
     attributes:
       label: 🔁 Instrucciones
@@ -44,10 +44,10 @@ body:
       description: Describe o adjunta referencias al diseño/UI (pantallas, menús, botones) relacionados con la funcionalidad.
       value: |
         - **Pantallas**:
-        - **Elementos**: 
+        - **Elementos**:
     validations:
       required: false
-      
+
   - type: textarea
     id: video_evidence
     attributes:
