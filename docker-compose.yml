@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   ghost:
-    image: ghost:5
+    image: ghost:5.115.0
     container_name: miso-ghost
     environment:
       - NODE_ENV=development
