@@ -7,8 +7,25 @@ services:
       - NODE_ENV=development
       - url="http://localhost:3000"
       - database__connection__filename="content/data/ghost.db"
-    volumes:
-      - ./ghost_data:/var/lib/ghost/content
+      - spam__user_login__freeRetries=999
+      - spam__member_login__freeRetries=999
+#    volumes:
+#      - ./ghost_data:/var/lib/ghost/content
     ports:
       - "3000:2368"
+    restart: unless-stopped
+
+  ghost2:
+    image: ghost:4.5
+    container_name: miso-ghost2
+    environment:
+      - NODE_ENV=development
+      - url="http://localhost:2000"
+      - database__connection__filename="content/data/ghost2.db"
+      - spam__user_login__freeRetries=999
+      - spam__member_login__freeRetries=999
+#    volumes:
+#      - ./ghost_data:/var/lib/ghost/content
+    ports:
+      - "2000:2368"
     restart: unless-stopped
